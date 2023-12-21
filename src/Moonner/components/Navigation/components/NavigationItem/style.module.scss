@@ -1,0 +1,33 @@
+@import '/src/variables.scss';
+
+.item {
+
+    &_link {
+        display: inline-block;
+        color: $text-color;
+        font-family: $main-font;
+        font-size: 19px;
+        font-weight: 500;
+        padding: 5px;
+        transition: opacity 0.3s ease,
+            color 0.3s ease;
+
+        &:hover,
+        &:focus-visible,
+        &:hover .item_link_wrapper svg,
+        &:focus-visible .item_link_wrapper svg {
+            color: $active-color;
+        }
+
+        &:active {
+            color: $active-color;
+            opacity: 0.7;
+        }  
+    }
+
+    &_link_wrapper {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+    }
+}

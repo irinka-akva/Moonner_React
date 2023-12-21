@@ -1,0 +1,19 @@
+@import '/src/variables.scss';
+
+.post_btn {
+    background-color: transparent;
+    padding: 0;
+    border: none;
+    cursor: pointer;
+
+    &_wrapper {
+        display: flex;
+        gap: 15px;
+        align-items: center;
+    }
+
+    &_number {
+        font-size: 13px;
+        color: $placeholder-color;
+    }
+}

@@ -1,0 +1,54 @@
+@import '/src/variables.scss';
+
+.post {
+    display: grid;
+    grid-template-columns: 7% 91%;
+    gap: 2%;
+    padding: 12px 15px;
+
+    &:not(:last-child) {
+        border-bottom: 1px solid $border-color;
+    }
+
+    &_name_wrapper {
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        margin-bottom: 10px;
+        gap: 5px;
+    }
+
+    &_user_name {
+        font-size: 18px;
+    }
+
+    &_time {
+        color: $placeholder-color;
+        font-size: 16px;
+    }
+
+    &_text {
+        margin: 0 0 12px 0;
+        font-family: $main-font;
+        font-size: 14px;
+        color: $text-color;
+    }
+
+    &_photo_wrapper {
+        border: 1px solid $border-color;
+        border-radius: 36px;
+        overflow: hidden;
+        margin-bottom: 15px;
+    }
+
+    &_photo {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    &_icons_wrapper {
+        display: flex;
+        justify-content: space-around;
+    }
+}
