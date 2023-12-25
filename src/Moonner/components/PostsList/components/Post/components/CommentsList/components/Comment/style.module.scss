@@ -1,0 +1,27 @@
+@import '/src/variables.scss';
+
+.comment {
+    padding: 5px;
+    border: 1px solid $border-color;
+    background-color: $border-color;
+    border-radius: 5px;
+    font-size: 14px;
+
+    &_text {
+        margin: 0;
+    }
+
+    &_wrapper {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 10px;
+        color: $active-color;
+    }
+
+    &_photo {
+        border: 1px solid $active-color;
+        width: 40px;
+        height: 40px;
+    }
+}

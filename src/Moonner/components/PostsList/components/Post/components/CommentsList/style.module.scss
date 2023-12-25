@@ -1,0 +1,35 @@
+@import '/src/variables.scss';
+
+.comments_list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+    &_wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        overflow: hidden;
+        max-height: 0;
+        padding: 0;
+        transition: max-height 0.5s ease;
+
+        &.open {
+            padding: 10px 15px 10px 40px;
+            overflow: auto;
+            max-height: none;
+        }
+    }
+
+    &_header {
+        margin: 0;
+        font-size: 18px;
+        font-weight: 400;
+        color: $active-color;
+        border-bottom: 1px solid $active-color;
+    }
+
+}

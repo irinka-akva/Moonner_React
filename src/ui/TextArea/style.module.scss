@@ -1,0 +1,30 @@
+@import '/src/variables.scss';
+
+.textarea {
+    font-family: $main-font;
+    font-size: 14px;
+    color: $text-color;
+    width: 100%;
+    min-height: 100px;
+    margin-bottom: 10px;
+    padding: 5px;
+    resize: none;
+    background-color: transparent;
+    border-radius: 5px;
+    border: 1px solid $border-color;
+    transition: border 0.3s ease;
+
+    &::placeholder {
+        font-family: $main-font;
+        font-size: 15px;
+        padding: 5px;
+        color: $placeholder-color;
+    }
+
+    &:hover,
+    &:focus-visible,
+    &:active {
+        outline: none;
+        border: 1px solid $active-color;
+    }
+}

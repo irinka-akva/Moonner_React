@@ -1,0 +1,29 @@
+@import '/src/variables.scss';
+
+.main_btn {
+    font-family: $secondary-font;
+    font-size: 18px;
+    font-weight: 400;
+    border-radius: 36px;
+    padding: 7px 16px;
+    border: none;
+    min-width: 104px;
+    background-color: $active-color;
+    color: $text-color;
+    outline: 1px solid transparent;
+    transition: outline 0.3s ease,
+        opacity 0.3s ease;
+
+    &:hover:not(:disabled),
+    &:focus-visible:not(:disabled) {
+        outline: 1px solid $active-color;
+    }
+
+    &:active:not(:disabled) {
+        outline: 1px solid transparent;
+    }
+
+    &:disabled {
+        opacity: 0.5;
+    }
+}
